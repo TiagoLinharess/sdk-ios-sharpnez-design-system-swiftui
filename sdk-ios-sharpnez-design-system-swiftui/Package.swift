@@ -1,0 +1,28 @@
+// swift-tools-version: 6.2
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
+import PackageDescription
+
+let package = Package(
+    name: "SharpnezDesignSystemSwiftUI",
+    platforms: [.iOS(.v26), .macOS(.v26), .visionOS(.v26)],
+    products: [
+        .library(
+            name: "SharpnezDesignSystemSwiftUI",
+            targets: ["SharpnezDesignSystemSwiftUI"]
+        ),
+    ],
+    targets: [
+        .target(
+            name: "SharpnezDesignSystemSwiftUI",
+            path: "SharpnezDesignSystemSwiftUI",
+            resources: [
+                .process("Resources")
+            ]
+        ),
+        .testTarget(
+            name: "SharpnezDesignSystemSwiftUITests",
+            dependencies: ["SharpnezDesignSystemSwiftUI"]
+        ),
+    ]
+)
