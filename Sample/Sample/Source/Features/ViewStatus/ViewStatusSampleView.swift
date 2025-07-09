@@ -5,7 +5,7 @@
 //  Created by Tiago Linhares on 11/07/23.
 //
 
-import SharpnezDesignSystem
+import SharpnezDesignSystemSwiftUI
 import SwiftUI
 
 struct ViewStatusSampleView: View {
