@@ -9,11 +9,13 @@ import SwiftUI
 
 public extension View {
     func closeKeyboard() {
+#if !os(macOS)
         UIApplication.shared.sendAction(
             #selector(UIResponder.resignFirstResponder),
             to: nil,
             from: nil,
             for: nil
         )
+#endif
     }
 }
