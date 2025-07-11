@@ -19,6 +19,7 @@ public enum DSFontName: String {
 public enum DSFontWeight: String {
     case regular = "Regular"
     case medium = "Medium"
+    case semiBold = "SemiBold"
     case bold = "Bold"
 }
 
@@ -53,7 +54,7 @@ extension Font {
     /// Body.
     /// Custom font with small size
     public static func body(_ style: DSFontName, _ weight: DSFontWeight) -> Font {
-        return custom("\(style.rawValue)-\(weight.rawValue)", size: .small)
+        custom("\(style.rawValue)-\(weight.rawValue)", size: .small)
     }
     
     /// Caption.

@@ -17,6 +17,9 @@ enum DSConstants {
     enum Fonts {
         
         /// Poppins-Bold
+        static let poppinsSemiBoldFont: String = "Poppins-SemiBold"
+        
+        /// Poppins-Bold
         static let poppinsBoldFont: String = "Poppins-Bold"
         
         /// Poppins-Medium
@@ -27,6 +30,9 @@ enum DSConstants {
         
         /// Montserrat-Bold
         static let montserratBoldFont: String = "Montserrat-Bold"
+        
+        /// Montserrat-Bold
+        static let montserratSemiBoldFont: String = "Montserrat-SemiBold"
         
         /// Montserrat-Bold
         static let montserratMediumFont: String = "Montserrat-Medium"

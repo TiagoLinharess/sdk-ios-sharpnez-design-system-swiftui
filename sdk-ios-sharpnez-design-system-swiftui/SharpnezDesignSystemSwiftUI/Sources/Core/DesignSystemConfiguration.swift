@@ -38,9 +38,11 @@ public final class DesignSystemConfiguration: NSObject {
             bundle.url(forResource: DSConstants.Fonts.poppinsBoldFont, withExtension: DSConstants.Fonts.fontsExtension),
             bundle.url(forResource: DSConstants.Fonts.poppinsMediumFont, withExtension: DSConstants.Fonts.fontsExtension),
             bundle.url(forResource: DSConstants.Fonts.poppinsRegularFont, withExtension: DSConstants.Fonts.fontsExtension),
+            bundle.url(forResource: DSConstants.Fonts.poppinsSemiBoldFont, withExtension: DSConstants.Fonts.fontsExtension),
             bundle.url(forResource: DSConstants.Fonts.montserratBoldFont, withExtension: DSConstants.Fonts.fontsExtension),
             bundle.url(forResource: DSConstants.Fonts.montserratMediumFont, withExtension: DSConstants.Fonts.fontsExtension),
-            bundle.url(forResource: DSConstants.Fonts.montserratRegularFont, withExtension: DSConstants.Fonts.fontsExtension)
+            bundle.url(forResource: DSConstants.Fonts.montserratRegularFont, withExtension: DSConstants.Fonts.fontsExtension),
+            bundle.url(forResource: DSConstants.Fonts.montserratSemiBoldFont, withExtension: DSConstants.Fonts.fontsExtension)
         ]
         
         fonts

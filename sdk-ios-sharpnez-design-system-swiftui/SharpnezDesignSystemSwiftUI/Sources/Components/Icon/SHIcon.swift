@@ -23,6 +23,7 @@ public enum SHIconType: String {
     case warning
     case info
     case chevronLeft
+    case google
 }
 
 public struct SHIcon: View {

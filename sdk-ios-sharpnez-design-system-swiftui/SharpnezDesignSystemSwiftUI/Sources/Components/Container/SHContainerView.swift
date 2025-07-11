@@ -32,6 +32,11 @@ public struct SHContainerView<Content: View>: View {
         self.content = content()
     }
     
+    public init(@ViewBuilder content: () -> Content) {
+        self.title = String()
+        self.content = content()
+    }
+    
     // MARK: Body
     
     public var body: some View {
@@ -39,6 +44,7 @@ public struct SHContainerView<Content: View>: View {
             Color.background(colorScheme: colorScheme)
                 .ignoresSafeArea()
             content
+                .frame(maxWidth: 900)
                 .toolbar(.visible)
                 .toolbarRole(.automatic)
                 .background(Color.background(colorScheme: colorScheme).ignoresSafeArea())

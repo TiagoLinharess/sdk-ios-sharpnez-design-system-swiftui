@@ -77,6 +77,9 @@ public struct SHButton: View {
     /// Button image
     private let icon: SHIconType?
     
+    /// Button image render mode
+    private let iconRenderingMode: Image.TemplateRenderingMode
+    
     /// Button style
     private let style: SHButtonStyle
     
@@ -98,6 +101,7 @@ public struct SHButton: View {
     public init(
         title: String,
         icon: SHIconType? = nil,
+        iconRenderingMode: Image.TemplateRenderingMode = .template,
         style: SHButtonStyle,
         font: DSFontName,
         isLoading: Bool = false,
@@ -106,6 +110,7 @@ public struct SHButton: View {
     ) {
         self.title = title
         self.icon = icon
+        self.iconRenderingMode = iconRenderingMode
         self.style = style
         self.font = font
         self.action = action
@@ -123,7 +128,7 @@ public struct SHButton: View {
                 button
             }
         }
-        .font(.body(font, .medium))
+        .font(.body(font, .semiBold))
         .foregroundColor(style.titleColor.opacity(opacity))
         .padding(.small)
         .frame(height: .xxLarge)
@@ -164,9 +169,9 @@ public struct SHButton: View {
                 } icon: {
                     SHIcon(icon: icon)
                         .resizable()
-                        .renderingMode(.template)
+                        .renderingMode(iconRenderingMode)
                         .foregroundStyle(style.titleColor)
-                        .frame(width: .small, height: .small)
+                        .frame(width: .medium, height: .medium)
                 }
                 .underline(style.hasUnderline, color: style.titleColor)
             } else {
