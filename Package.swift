@@ -15,14 +15,15 @@ let package = Package(
     targets: [
         .target(
             name: "SharpnezDesignSystemSwiftUI",
-            path: "SharpnezDesignSystemSwiftUI",
+            path: "sdk-ios-sharpnez-design-system-swiftui/SharpnezDesignSystemSwiftUI",
             resources: [
                 .process("Resources")
             ]
         ),
         .testTarget(
             name: "SharpnezDesignSystemSwiftUITests",
-            dependencies: ["SharpnezDesignSystemSwiftUI"]
+            dependencies: ["SharpnezDesignSystemSwiftUI"],
+            path: "sdk-ios-sharpnez-design-system-swiftui/Tests"
         ),
     ]
 )

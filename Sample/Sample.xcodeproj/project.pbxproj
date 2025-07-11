@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		ED6A760C2E1E176200B66322 /* SharpnezDesignSystemSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = ED6A760B2E1E176200B66322 /* SharpnezDesignSystemSwiftUI */; };
+		EDFE8FCA2E212E1500F1F9D3 /* SharpnezDesignSystemSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EDFE8FC92E212E1500F1F9D3 /* SharpnezDesignSystemSwiftUI */; };
+		EDFE8FCD2E212E5F00F1F9D3 /* SharpnezDesignSystemSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EDFE8FCC2E212E5F00F1F9D3 /* SharpnezDesignSystemSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDFE8FCD2E212E5F00F1F9D3 /* SharpnezDesignSystemSwiftUI in Frameworks */,
+				EDFE8FCA2E212E1500F1F9D3 /* SharpnezDesignSystemSwiftUI in Frameworks */,
 				ED6A760C2E1E176200B66322 /* SharpnezDesignSystemSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +75,8 @@
 			name = Sample;
 			packageProductDependencies = (
 				ED6A760B2E1E176200B66322 /* SharpnezDesignSystemSwiftUI */,
+				EDFE8FC92E212E1500F1F9D3 /* SharpnezDesignSystemSwiftUI */,
+				EDFE8FCC2E212E5F00F1F9D3 /* SharpnezDesignSystemSwiftUI */,
 			);
 			productName = Sample;
 			productReference = ED6A75F92E1E15E000B66322 /* Sample.app */;
@@ -101,7 +107,7 @@
 			mainGroup = ED6A75F02E1E15E000B66322;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				ED6A760A2E1E176200B66322 /* XCLocalSwiftPackageReference "../sdk-ios-sharpnez-design-system-swiftui" */,
+				EDFE8FCB2E212E5F00F1F9D3 /* XCLocalSwiftPackageReference "../../sdk-ios-sharpnez-design-system-swiftui" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = ED6A75FA2E1E15E000B66322 /* Products */;
@@ -362,14 +368,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		ED6A760A2E1E176200B66322 /* XCLocalSwiftPackageReference "../sdk-ios-sharpnez-design-system-swiftui" */ = {
+		EDFE8FCB2E212E5F00F1F9D3 /* XCLocalSwiftPackageReference "../../sdk-ios-sharpnez-design-system-swiftui" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = "../sdk-ios-sharpnez-design-system-swiftui";
+			relativePath = "../../sdk-ios-sharpnez-design-system-swiftui";
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		ED6A760B2E1E176200B66322 /* SharpnezDesignSystemSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpnezDesignSystemSwiftUI;
+		};
+		EDFE8FC92E212E1500F1F9D3 /* SharpnezDesignSystemSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharpnezDesignSystemSwiftUI;
+		};
+		EDFE8FCC2E212E5F00F1F9D3 /* SharpnezDesignSystemSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SharpnezDesignSystemSwiftUI;
 		};
