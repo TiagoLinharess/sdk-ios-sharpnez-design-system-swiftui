@@ -22,8 +22,12 @@ public enum SHIconType: String {
     case error
     case warning
     case info
-    case chevronLeft
+    case chevronRight
     case google
+    case menu
+    case home
+    case category
+    case close
 }
 
 public struct SHIcon: View {
