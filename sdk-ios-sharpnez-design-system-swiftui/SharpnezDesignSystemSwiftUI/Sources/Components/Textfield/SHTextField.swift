@@ -59,7 +59,6 @@ public struct SHTextField: View {
         VStack(alignment: .leading, spacing: .extraSmall) {
             Text(title)
                 .configureWithSH(color: color, font: .body(font, .medium))
-                .padding(.leading, .small)
             TextField(String(), text: $text)
                 .textInputAutocapitalization(.never)
                 .autocorrectionDisabled()

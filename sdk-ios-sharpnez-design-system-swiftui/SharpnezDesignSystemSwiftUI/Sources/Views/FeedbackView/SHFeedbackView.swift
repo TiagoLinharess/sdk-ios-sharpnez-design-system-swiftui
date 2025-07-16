@@ -89,14 +89,14 @@ public struct SHFeedbackView: View {
             Text(title)
                 .configureWithSH(
                     color: .onBackground(colorScheme: colorScheme),
-                    font: .title2(.poppins, .medium)
+                    font: .title3(.montserrat, .medium)
                 )
-                .lineLimit(2)
+                .lineLimit(4)
                 .multilineTextAlignment(.center)
             Text(description)
                 .configureWithSH(
                     color: .onBackground(colorScheme: colorScheme),
-                    font: .subtitle(.montserrat, .regular)
+                    font: .body(.montserrat, .regular)
                 )
                 .multilineTextAlignment(.center)
             Spacer()

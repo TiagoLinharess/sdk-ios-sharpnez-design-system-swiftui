@@ -18,7 +18,6 @@ struct SHBulletIconSampleView: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     
     let icons: [Icon] = [
-        .init(value: .addProfile),
         .init(value: .profile),
         .init(value: .product),
         .init(value: .bills),

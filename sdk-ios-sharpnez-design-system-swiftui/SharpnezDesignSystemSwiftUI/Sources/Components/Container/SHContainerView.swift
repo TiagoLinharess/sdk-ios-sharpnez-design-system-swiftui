@@ -53,7 +53,7 @@ public struct SHContainerView<Content: View>: View {
                     ToolbarItem(placement: .title) {
                         Text(title)
                             .foregroundStyle(Color.onBackground(colorScheme: colorScheme))
-                            .font(.subtitle(.poppins, .medium))
+                            .font(.subtitle(.poppins, .regular))
                     }
                 }
             

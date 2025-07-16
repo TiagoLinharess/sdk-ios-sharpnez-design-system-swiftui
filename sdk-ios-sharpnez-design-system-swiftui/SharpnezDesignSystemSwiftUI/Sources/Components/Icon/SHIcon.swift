@@ -7,27 +7,41 @@
 
 import SwiftUI
 
-public enum SHIconType: String {
+public enum SHIconType: String, Equatable, CaseIterable {
     
     // MARK: UISHIcon
     
+    case financialControl
+    case google
+    case menu
+    case add
+    case info
+    case warning
+    case error
+    case success
+    case close
+    case chevronRight
+    case chevronLeft
+    case home
+    case house
+    case building
+    case buildings
+    case hospital
+    case homeTrendUp
+    case homeTrendDown
+    case activity
+    case chart
+    case graph//
+    case wallet
+    case cardPos
+    case edit
     case profile
-    case addProfile
     case bills
     case budget
     case card
     case coin
     case product
-    case success
-    case error
-    case warning
-    case info
-    case chevronRight
-    case google
-    case menu
-    case home
     case category
-    case close
 }
 
 public struct SHIcon: View {
