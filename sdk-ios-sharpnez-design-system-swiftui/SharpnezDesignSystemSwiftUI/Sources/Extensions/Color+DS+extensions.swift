@@ -5,6 +5,12 @@
 //  Created by Tiago Linhares on 06/07/23.
 //
 
+#if canImport(UIKit)
+import UIKit
+#endif
+#if canImport(AppKit)
+import AppKit
+#endif
 import SwiftUI
 
 public extension Color {
@@ -198,5 +204,32 @@ public extension Color {
             blue:  Double(b) / 255,
             opacity: Double(a) / 255
         )
+    }
+    
+    // MARK: Color to Hex String
+    
+    /// Transforms Color in string hex (ex: #RRGGBB ou #AARRGGBB)
+    func toHexString(includeAlpha: Bool) -> String? {
+        #if canImport(UIKit)
+        let uiColor = UIColor(self)
+        var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
+        guard uiColor.getRed(&r, green: &g, blue: &b, alpha: &a) else { return nil }
+        #elseif canImport(AppKit)
+        let nsColor = NSColor(self)
+        guard let rgbColor = nsColor.usingColorSpace(.sRGB) else { return nil }
+        let r = rgbColor.redComponent
+        let g = rgbColor.greenComponent
+        let b = rgbColor.blueComponent
+        let a = rgbColor.alphaComponent
+        #else
+        return nil
+        #endif
+        if includeAlpha {
+            let hex = String(format: "#%02lX%02lX%02lX%02lX", Int(a * 255), Int(r * 255), Int(g * 255), Int(b * 255))
+            return hex
+        } else {
+            let hex = String(format: "#%02lX%02lX%02lX", Int(r * 255), Int(g * 255), Int(b * 255))
+            return hex
+        }
     }
 }
